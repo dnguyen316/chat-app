@@ -15,8 +15,7 @@
     "isbot": "^5.1.27",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router": "^7.7.1",
-    "yarn": "^1.22.22"
+    "react-router": "^7.7.1"
   },
   "devDependencies": {
     "@react-router/dev": "^7.7.1",
@@ -27,6 +26,7 @@
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-tsconfig-paths": "^5.1.4",
+    "yarn": "^1.22.22"
   }
 }
