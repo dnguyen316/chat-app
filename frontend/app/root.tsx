@@ -34,8 +34,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <Sidebar/>
-        {children}
+        <div className="flex flex-col h-screen">
+          <div className="flex">
+            <Sidebar />
+            {children}
+          </div>
+        </div>
         <ScrollRestoration />
         <Scripts />
       </body>
