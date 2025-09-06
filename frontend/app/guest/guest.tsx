@@ -1,7 +1,11 @@
-const GuestPage = () => {
-    return (
-        <div>Hello World</div>
-    )
-}
+import ChatComponent from "components/chat";
 
-export default GuestPage
+const GuestPage = () => {
+  return (
+    <ChatComponent.ChatWrapper>
+      <ChatComponent.ChatContent />
+    </ChatComponent.ChatWrapper>
+  );
+};
+
+export default GuestPage;

@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import Sidebar from "components/side-bar/side-bar";
+import ChatComponent from "components/chat/";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -34,8 +35,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <Sidebar/>
-        {children}
+        <div className="flex flex-col h-screen">
+          <div className="flex">
+            <Sidebar />
+            <div className="flex flex-col justify-between pt-[80px] pb-[24px] px-[64px]">
+              {children}
+              <ChatComponent.ChatTextArea />
+            </div>
+          </div>
+        </div>
         <ScrollRestoration />
         <Scripts />
       </body>
